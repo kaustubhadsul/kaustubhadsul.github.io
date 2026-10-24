@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaustubh K. Adsul · Thermal Engineer</title>
+<meta name="description" content="Kaustubh K. Adsul — Ph.D. Candidate in Mechanical Engineering at UT Arlington (EMNSPC Lab), specializing in data center thermal management and immersion cooling.">
+<meta property="og:title" content="Kaustubh K. Adsul · Thermal Engineer">
+<meta property="og:description" content="Ph.D. Candidate, Mechanical Engineering · Data Center Thermal Management · EMNSPC Lab, UT Arlington">
+<meta property="og:image" content="headshot.jpg">
+<link rel="icon" href="headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1F3A; --navy2:#123A6B; --blue:#0B4F9C; --blue2:#2A7FD4; --orange:#F28C28;
+  --ink:#1f2a37; --muted:#5a6472; --line:#e3e8ef; --bg:#f5f7fa; --card:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px}
+
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;position:relative;overflow:hidden;padding:56px 0 80px}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:linear-gradient(90deg,var(--blue),var(--blue2) 45%,var(--orange))}
+.hero .wrap{display:flex;gap:36px;align-items:center}
+.photo{width:148px;height:148px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 0 0 3px var(--orange),0 12px 30px rgba(0,0,0,.35);flex:none}
+.kicker{font:600 12px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:8px}
+h1{font:700 clamp(30px,5vw,44px)/1.1 Poppins,sans-serif;letter-spacing:-.01em}
+.title{font-size:18px;font-weight:500;margin-top:10px;color:#dce6f3}
+.lab{font-size:15px;color:#a9bbd3;margin-top:2px}
+.badge{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:6px 12px;border-radius:999px;background:rgba(242,140,40,.15);border:1px solid rgba(242,140,40,.45);font-size:13px;font-weight:500;color:#ffd2a6}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--orange);display:block}
+
+/* action buttons */
+.actions{margin-top:-36px;position:relative;z-index:2}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:12px;background:var(--card);text-decoration:none;box-shadow:0 1px 2px rgba(11,31,58,.06),0 8px 24px rgba(11,31,58,.08);border:1px solid var(--line);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(11,31,58,.08),0 14px 30px rgba(11,31,58,.14)}
+.btn svg{width:22px;height:22px;flex:none;color:var(--blue)}
+.btn b{display:block;font-weight:600;font-size:15px;color:var(--navy)}
+.btn span{display:block;font-size:12.5px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.btn>div{min-width:0}
+.btn.primary{background:var(--orange);border-color:var(--orange)}
+.btn.primary svg,.btn.primary b{color:#fff}
+.btn.primary span{color:#fff3e6}
+
+section{padding:48px 0 8px}
+h2{font:600 22px Poppins,sans-serif;color:var(--navy);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+h2::before{content:"";width:22px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--blue),var(--orange))}
+.about p{font-size:16.5px;color:#334155;max-width:760px}
+.about p+p{margin-top:12px}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.stat .n{font:700 26px Poppins,sans-serif;color:var(--blue);line-height:1.1}
+.stat .n em{font-style:normal;color:var(--orange)}
+.stat p{font-size:13.5px;color:var(--muted);margin-top:6px}
+
+.tl{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.item{padding:18px 20px;display:grid;grid-template-columns:1fr auto;gap:2px 16px}
+.item+.item{border-top:1px solid var(--line)}
+.item b{font-weight:600;color:var(--navy)}
+.item .org{color:var(--blue);font-size:14.5px}
+.item .when{font-size:13px;color:var(--muted);white-space:nowrap;grid-row:1;grid-column:2}
+.item p{grid-column:1/-1;font-size:14px;color:#475569;margin-top:4px}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:7px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:13.5px;color:#334155}
+.chip.hot{border-color:rgba(242,140,40,.5);background:#fff7ef;color:#8a4a0c}
+
+footer{margin-top:56px;background:var(--navy);color:#a9bbd3;padding:28px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:#fff;text-decoration:none}
+
+@media (max-width:720px){
+  .hero{padding:40px 0 72px;text-align:center}
+  .hero .wrap{flex-direction:column;gap:20px}
+  .photo{width:124px;height:124px}
+  .title{font-size:16px}
+  .grid{grid-template-columns:1fr 1fr}
+  .btn{padding:14px;gap:10px}
+  .btn span{display:none}
+  .stats{grid-template-columns:1fr 1fr}
+  .item{grid-template-columns:1fr}
+  .item .when{grid-row:auto;grid-column:1}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="photo" src="headshot.jpg" alt="Portrait of Kaustubh K. Adsul">
+    <div>
+      <div class="kicker">Thermal Engineer · Data Centers</div>
+      <h1>Kaustubh K. Adsul</h1>
+      <div class="title">Ph.D. Candidate, Mechanical Engineering</div>
+      <div class="lab">EMNSPC Lab · The University of Texas at Arlington</div>
+      <div class="badge"><i></i>Ph.D. expected Dec 2026 · Open to full-time roles</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap actions">
+  <div class="grid">
+    <a class="btn primary" href="Kaustubh_Adsul_Resume.pdf" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+      <div><b>Resume</b><span>Download PDF</span></div></a>
+    <a class="btn" href="kaustubh-adsul.vcf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M19 8v6M16 11h6"/></svg>
+      <div><b>Save contact</b><span>Add to your phone</span></div></a>
+    <a class="btn" href="https://www.linkedin.com/in/kaustubhadsul/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg>
+      <div><b>LinkedIn</b><span>/in/kaustubhadsul</span></div></a>
+    <a class="btn" href="mailto:kaustubhadsulphd@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      <div><b>Email</b><span>kaustubhadsulphd@gmail.com</span></div></a>
+    <a class="btn" href="tel:+16822835928">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      <div><b>Call</b><span>+1 (682) 283-5928</span></div></a>
+    <a class="btn" id="scholar" href="https://scholar.google.com/citations?view_op=search_authors&amp;mauthors=Kaustubh+Adsul" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+      <div><b>Google Scholar</b><span>Publications</span></div></a>
+  </div>
+</div>
+
+<main class="wrap">
+  <section class="about">
+    <h2>About</h2>
+    <p>I'm a thermal engineer who works where lab research meets real deployment. My work at UT Arlington's EMNSPC Lab covers two-phase and single-phase immersion cooling, indirect evaporative cooling, liquid cold plates and thermal interface materials, combining hands-on experimental characterization with CFD in ANSYS Fluent, IcePak and Flownex.</p>
+    <p>I've taken that work into the field, leading on-site deployment and commissioning of a 10 MW two-phase immersion cooling site. I'm looking to grow into facility-scale cooling leadership.</p>
+  </section>
+
+  <section>
+    <h2>Highlights</h2>
+    <div class="stats">
+      <div class="stat"><div class="n">10 <em>MW</em></div><p>Two-phase immersion cooling site deployed &amp; commissioned</p></div>
+      <div class="stat"><div class="n">5<em>+</em></div><p>Industry partners: Google, LiquidStack, Chemours, MESTEX, ERG Aerospace</p></div>
+      <div class="stat"><div class="n"><em>$</em>20K</div><p>In-house TIM tester built, vs. ~$100K market equivalent</p></div>
+      <div class="stat"><div class="n">ASME</div><p>Peer-reviewed paper &amp; poster, InterPACK 2020</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="tl">
+      <div class="item"><b>Project Engineer, Two-Phase Immersion Cooling</b><span class="when">Jun – Aug 2025</span><span class="org">Marathon Digital Holdings</span>
+        <p>Led on-site deployment of a 10 MW 2PIC site: MEP coordination, SCADA &amp; sensor instrumentation, commissioning, leak testing and performance validation.</p></div>
+      <div class="item"><b>Graduate Research Assistant</b><span class="when">2020 – Present</span><span class="org">EMNSPC Lab, UT Arlington</span>
+        <p>Led industry-sponsored projects on indirect evaporative cooling (MESTEX), single-phase immersion (LiquidStack) and two-phase immersion (Chemours), plus OCP fluid-reliability studies.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="tl">
+      <div class="item"><b>Ph.D., Mechanical Engineering</b><span class="when">Expected Dec 2026</span><span class="org">The University of Texas at Arlington</span>
+        <p>Indirect evaporative cooling: effect of secondary air on data center primary air.</p></div>
+      <div class="item"><b>M.S., Mechanical Engineering</b><span class="when">2021</span><span class="org">The University of Texas at Arlington</span>
+        <p>Thermal design of server chassis manifolds for liquid-cooled servers using CFD.</p></div>
+      <div class="item"><b>B.E., Mechanical Engineering</b><span class="when">2017</span><span class="org">University of Pune</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Expertise</h2>
+    <div class="chips">
+      <span class="chip hot">Two-phase immersion cooling</span><span class="chip hot">Single-phase immersion</span><span class="chip hot">Indirect evaporative cooling</span><span class="chip hot">Liquid cold plates</span><span class="chip hot">Thermal interface materials</span>
+      <span class="chip">ANSYS Fluent</span><span class="chip">ANSYS IcePak</span><span class="chip">Flownex</span><span class="chip">SolidWorks</span><span class="chip">AutoCAD</span><span class="chip">MATLAB</span>
+      <span class="chip">DAQ &amp; instrumentation</span><span class="chip">SCADA</span><span class="chip">CDUs</span><span class="chip">Commissioning</span><span class="chip">Root-cause analysis</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Kaustubh K. Adsul</span>
+    <span><a href="mailto:kaustubhadsulphd@gmail.com">kaustubhadsulphd@gmail.com</a> · <a href="tel:+16822835928">+1 (682) 283-5928</a></span>
+  </div>
+</footer>
+</body>
+</html>
