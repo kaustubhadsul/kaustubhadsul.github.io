@@ -37,7 +37,7 @@ h1{font:700 clamp(30px,5vw,44px)/1.1 Poppins,sans-serif;letter-spacing:-.01em}
 
 /* action buttons */
 .actions{margin-top:-36px;position:relative;z-index:2}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:12px;background:var(--card);text-decoration:none;box-shadow:0 1px 2px rgba(11,31,58,.06),0 8px 24px rgba(11,31,58,.08);border:1px solid var(--line);transition:transform .15s,box-shadow .15s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(11,31,58,.08),0 14px 30px rgba(11,31,58,.14)}
 .btn svg{width:22px;height:22px;flex:none;color:var(--blue)}
@@ -72,6 +72,17 @@ h2::before{content:"";width:22px;height:4px;border-radius:2px;background:linear-
 .chip{padding:7px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:13.5px;color:#334155}
 .chip.hot{border-color:rgba(242,140,40,.5);background:#fff7ef;color:#8a4a0c}
 
+.ext{color:#fff;text-decoration:underline;text-decoration-color:rgba(242,140,40,.7);text-underline-offset:3px;font-weight:500}
+.ext:hover{color:var(--orange)}
+.ext.dark{color:var(--blue)}
+.ext.dark:hover{color:var(--orange)}
+.pubs{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 22px 18px}
+.pubs h3{font:600 12px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin:18px 0 8px}
+.pubs ol{padding-left:20px}
+.pubs li{font-size:14px;color:#475569;margin:0 0 10px;padding-left:4px}
+.pubs li b{color:var(--navy)}
+.pubs li em{color:var(--blue)}
+.pubs a{color:var(--blue);word-break:break-all}
 footer{margin-top:56px;background:var(--navy);color:#a9bbd3;padding:28px 0;font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{color:#fff;text-decoration:none}
@@ -99,7 +110,7 @@ footer a{color:#fff;text-decoration:none}
       <div class="kicker">Thermal Engineer · Data Centers</div>
       <h1>Kaustubh K. Adsul</h1>
       <div class="title">Ph.D. Candidate, Mechanical Engineering</div>
-      <div class="lab">EMNSPC Lab · The University of Texas at Arlington</div>
+      <div class="lab"><a class="ext" href="https://emnspc.uta.edu/" target="_blank" rel="noopener">EMNSPC Lab ↗</a> · The University of Texas at Arlington</div>
       <div class="badge"><i></i>Ph.D. expected Dec 2026 · Open to full-time roles</div>
     </div>
   </div>
@@ -110,6 +121,9 @@ footer a{color:#fff;text-decoration:none}
     <a class="btn primary" href="Kaustubh_Adsul_Resume.pdf" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
       <div><b>Resume</b><span>Download PDF</span></div></a>
+    <a class="btn primary" href="Kaustubh_Adsul_Portfolio.pdf" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"/></svg>
+      <div><b>Portfolio</b><span>Project slides (PDF)</span></div></a>
     <a class="btn" href="kaustubh-adsul.vcf" download>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M19 8v6M16 11h6"/></svg>
       <div><b>Save contact</b><span>Add to your phone</span></div></a>
@@ -125,13 +139,16 @@ footer a{color:#fff;text-decoration:none}
     <a class="btn" id="scholar" href="https://scholar.google.com/citations?view_op=search_authors&amp;mauthors=Kaustubh+Adsul" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
       <div><b>Google Scholar</b><span>Publications</span></div></a>
+    <a class="btn" href="https://emnspc.uta.edu/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18"/></svg>
+      <div><b>EMNSPC Lab</b><span>emnspc.uta.edu</span></div></a>
   </div>
 </div>
 
 <main class="wrap">
   <section class="about">
     <h2>About</h2>
-    <p>I'm a thermal engineer who works where lab research meets real deployment. My work at UT Arlington's EMNSPC Lab covers two-phase and single-phase immersion cooling, indirect evaporative cooling, liquid cold plates and thermal interface materials, combining hands-on experimental characterization with CFD in ANSYS Fluent, IcePak and Flownex.</p>
+    <p>I'm a thermal engineer who works where lab research meets real deployment. My work at UT Arlington's <a class="ext dark" href="https://emnspc.uta.edu/" target="_blank" rel="noopener">EMNSPC Lab</a> covers two-phase and single-phase immersion cooling, indirect evaporative cooling, liquid cold plates and thermal interface materials, combining hands-on experimental characterization with CFD in ANSYS Fluent, IcePak and Flownex.</p>
     <p>I've taken that work into the field, leading on-site deployment and commissioning of a 10 MW two-phase immersion cooling site. I'm looking to grow into facility-scale cooling leadership.</p>
   </section>
 
@@ -141,7 +158,7 @@ footer a{color:#fff;text-decoration:none}
       <div class="stat"><div class="n">10 <em>MW</em></div><p>Two-phase immersion cooling site deployed &amp; commissioned</p></div>
       <div class="stat"><div class="n">5<em>+</em></div><p>Industry partners: Google, LiquidStack, Chemours, MESTEX, ERG Aerospace</p></div>
       <div class="stat"><div class="n"><em>$</em>20K</div><p>In-house TIM tester built, vs. ~$100K market equivalent</p></div>
-      <div class="stat"><div class="n">ASME</div><p>Peer-reviewed paper &amp; poster, InterPACK 2020</p></div>
+      <div class="stat"><div class="n">8</div><p>Conference papers &amp; posters at InterPACK, ITherm and ES2</p></div>
     </div>
   </section>
 
@@ -150,7 +167,7 @@ footer a{color:#fff;text-decoration:none}
     <div class="tl">
       <div class="item"><b>Project Engineer, Two-Phase Immersion Cooling</b><span class="when">Jun – Aug 2025</span><span class="org">Marathon Digital Holdings</span>
         <p>Led on-site deployment of a 10 MW 2PIC site: MEP coordination, SCADA &amp; sensor instrumentation, commissioning, leak testing and performance validation.</p></div>
-      <div class="item"><b>Graduate Research Assistant</b><span class="when">2020 – Present</span><span class="org">EMNSPC Lab, UT Arlington</span>
+      <div class="item"><b>Graduate Research Assistant</b><span class="when">2020 – Present</span><span class="org"><a class="ext dark" href="https://emnspc.uta.edu/" target="_blank" rel="noopener">EMNSPC Lab ↗</a>, UT Arlington</span>
         <p>Led industry-sponsored projects on indirect evaporative cooling (MESTEX), single-phase immersion (LiquidStack) and two-phase immersion (Chemours), plus OCP fluid-reliability studies.</p></div>
     </div>
   </section>
@@ -158,11 +175,39 @@ footer a{color:#fff;text-decoration:none}
   <section>
     <h2>Education</h2>
     <div class="tl">
-      <div class="item"><b>Ph.D., Mechanical Engineering</b><span class="when">Expected Dec 2026</span><span class="org">The University of Texas at Arlington</span>
-        <p>Indirect evaporative cooling: effect of secondary air on data center primary air.</p></div>
+      <div class="item"><b>Ph.D., Mechanical Engineering</b><span class="when">Expected Dec 2026</span><span class="org">The University of Texas at Arlington</span></div>
       <div class="item"><b>M.S., Mechanical Engineering</b><span class="when">2021</span><span class="org">The University of Texas at Arlington</span>
         <p>Thermal design of server chassis manifolds for liquid-cooled servers using CFD.</p></div>
       <div class="item"><b>B.E., Mechanical Engineering</b><span class="when">2017</span><span class="org">University of Pune</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    <div class="pubs">
+      <h3>Conference papers</h3>
+      <ol>
+        <li>M. Tangri, K. Rahul, <b>K. Adsul</b>, M. Emami, Y. Fulpagare, D. Agonafer, “A comparative study of deep learning architectures for automated classification of particulate contaminants on electronic packaging surfaces,” <em>ASME InterPACK 2026</em></li>
+        <li>M. Tangri, <b>K. Adsul</b>, “Toward compute-efficient, boundary-condition-aware machine learning surrogates for tile-based IC thermal prediction,” <em>IEEE ITherm 2026</em></li>
+        <li>P. Jayaramu, M. Emami, V. Talari, M. R. Islam, <b>K. Adsul</b>, R. K. Suthar, et al., “Thermo-hydraulic performance of targeted flow in aluminum and copper heat sinks for immersion cooling applications,” <em>IEEE ITherm 2025, Dallas, TX. <a href="https://doi.org/10.1109/ITherm55376.2025.11235582" target="_blank" rel="noopener">doi:10.1109/ITherm55376.2025.11235582</a></em></li>
+        <li>M. Emami, R. K. Suthar, P. Bansode, M. Tangri, U. Rahangdale, S. Barua, D. Bhattarai, S. Amininasab, <b>K. K. Adsul</b>, D. Agonafer, “Investigation of the thermomechanical behavior of ASTRA M77 substrate core under single-phase liquid immersion cooling,” <em>ASME InterPACK 2025. <a href="https://doi.org/10.1115/IPACK2025-169286" target="_blank" rel="noopener">doi:10.1115/IPACK2025-169286</a></em></li>
+        <li>S. Saini, <b>K. K. Adsul</b>, P. Shahi, A. Niazmand, P. Bansode, D. Agonafer, “CFD modeling of the distribution of airborne particulate contaminants inside data center hardware,” <em>ASME InterPACK 2020. <a href="https://doi.org/10.1115/IPACK2020-2590" target="_blank" rel="noopener">doi:10.1115/IPACK2020-2590</a></em></li>
+      </ol>
+      <h3>Posters</h3>
+      <ol>
+        <li><b>K. Adsul</b>, T. Lambe, U. Chinomso, R. Paranjpee, P. Satpute, T. Mistry, Y. Fulpagare, D. Agonafer, “Experimental characterization of nozzle spray distribution at varying heights on a crossflow heat exchanger,” <em>InterPACK 2026</em></li>
+        <li><b>K. Adsul</b>, Y. Fulpagare, D. Agonafer, “Experimental mapping of spray distribution under variable nozzle height and operating conditions in a crossflow heat exchanger,” <em>ES2 2026</em></li>
+        <li><b>K. Adsul</b>, S. Saini, P. Shahi, A. Niazmand, P. Bansode, D. Agonafer, “CFD modeling of the distribution of airborne particulate contaminants inside data center hardware,” <em>ASME InterPACK 2020</em></li>
+      </ol>
+      <h3>Thesis</h3>
+      <ol>
+        <li><b>K. K. Adsul</b>, “Thermal design analysis of server chassis manifolds for liquid-cooled servers using CFD,” <em>M.S. thesis, The University of Texas at Arlington, 2021</em></li>
+      </ol>
+      <h3>In preparation</h3>
+      <ol>
+        <li><b>K. Adsul</b>, L. Reddy, U. Chinomso, R. Paranjpee, P. Satpute, T. Mistry, Y. Fulpagare, D. Agonafer, “Experimental characterization of nozzle height on secondary-air heat transfer in a crossflow indirect evaporative cooling test facility under variable operating conditions,” <em>journal manuscript in preparation</em></li>
+        <li><b>K. Adsul</b>, T. Lambe, T. Mistry, Y. Fulpagare, D. Agonafer, “Experimental mapping of collected-water distribution in a crossflow indirect evaporative cooling test facility under variable nozzle height, water flow, and fan speed,” <em>journal manuscript in preparation</em></li>
+      </ol>
     </div>
   </section>
 
@@ -171,7 +216,7 @@ footer a{color:#fff;text-decoration:none}
     <div class="chips">
       <span class="chip hot">Two-phase immersion cooling</span><span class="chip hot">Single-phase immersion</span><span class="chip hot">Indirect evaporative cooling</span><span class="chip hot">Liquid cold plates</span><span class="chip hot">Thermal interface materials</span>
       <span class="chip">ANSYS Fluent</span><span class="chip">ANSYS IcePak</span><span class="chip">Flownex</span><span class="chip">SolidWorks</span><span class="chip">AutoCAD</span><span class="chip">MATLAB</span>
-      <span class="chip">DAQ &amp; instrumentation</span><span class="chip">SCADA</span><span class="chip">CDUs</span><span class="chip">Commissioning</span><span class="chip">Root-cause analysis</span>
+      <span class="chip">DAQ &amp; instrumentation</span><span class="chip">SCADA</span><span class="chip">CDUs</span><span class="chip">Commissioning</span><span class="chip">Root-cause analysis</span><span class="chip hot">Certified Mission Critical Operator (CMCO)</span>
     </div>
   </section>
 </main>
